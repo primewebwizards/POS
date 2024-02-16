@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add product</title>
+</head>
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>name of the product</h2>
+        <input name="name" type="text" >
+        <h2>a unique code for your product</h2>
+        <input name="code" type="text">
+        <h2>upload an image</h2>
+        <input name="image" type="file">
+        <h2>cost price per unit</h2>
+        <input name="cost" type="money">
+        <h2>enter number of units</h2>
+        <input name="quantity" type="number">
+        <button type="submit">save</button>
+    </form>
+</body>
+</html>
